@@ -38,10 +38,10 @@
 #define SCREEN_ADDRESS 0x3C
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, OLED_RESET);
 
-int btn_rt          = 15; 
-int btn_bl          = 2;  
-int btn_set         = 4;  
-int buzz            = 0;
+int btn_rt          = 12;
+int btn_bl          = 13;
+int btn_set         = 14; // btn_set:  --- kurz gedrückt = Einstellungen;  --- länger gedrückt aktiviert den Timer
+int buzz            = 15;
 
 int akt_timer       = 0;
 int hrs             = 0;
